@@ -26,7 +26,7 @@ function loadSong(song){
 }
 
 playBtn.addEventListener('click', () => {
-    const isPlaying = musicContainer.classList.contains('paly')
+    const isPlaying = musicContainer.classList.contains('play')
     if(isPlaying){
         pauseSong();
     }else {
@@ -35,7 +35,7 @@ playBtn.addEventListener('click', () => {
 })
 
 //Play song function
-function playSong() {
+function  playSong() {
     musicContainer.classList.add('play')
     playBtn.querySelector('i.fas').classList.remove('fa-play');
     playBtn.querySelector('i.fas').classList.add('fa-pause');
